@@ -1,0 +1,10 @@
+name: Demo Github actions workflow
+on : [push]
+jobs :
+  Discover-GutHub-Actions-Workflows :
+    runs-on : ubuntu-latest
+    steps:
+      - run : echo "${{github.event.name}} event automatically triggered this job"
+      - run : echo "A ${{runner.os}} server has this hosted by GitHub"
+      - run : echo "{{github.repository}} is updated. Updated branch name is {{github.ref}}"
+      - run
