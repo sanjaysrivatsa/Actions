@@ -10,6 +10,5 @@ jobs :
       - name : Checking the repository's code
       - uses : actions/checkout@v3
       - run : echo "The runner has cloned the ${{github.repository}} repository"
-      - name : List files in the repository
       - run : ls -l ${{github.workspace}}
       - run : echo "Job status ${{job.status}}"
