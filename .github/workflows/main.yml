@@ -9,5 +9,4 @@ jobs :
       - run : echo "${{github.repository}} is updated. Updated branch name is ${{github.ref}}"
       - uses : actions/checkout@v3
       - run : echo "The runner has cloned the ${{github.repository}} repository"
-      - run : ls -l ${{github.workspace}}
-      - run : echo "Job status ${{job.status}}"
+      - 
